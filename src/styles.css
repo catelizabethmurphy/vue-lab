@@ -15,9 +15,50 @@ body{
 }
 
 #app{
+  font-family: "PT Sans", sans-serif;
   padding:28px;
   border-radius:10px;
   width: 90vw;
 }
 
 a{color:var(--accent);}
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr{
+  border-bottom: 1px solid var(--muted);
+}
+
+td{
+  padding: 8px;
+}
+
+th{
+  text-align: left;
+  padding: 8px;
+  background: var(--card);
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input{
+  font-family: "PT Sans", sans-serif;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+button{
+  padding: 8px 12px;
+  margin: -5px 10px;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
+}
