@@ -33,7 +33,7 @@ onMounted(async () => {
   setTimeout(() => {
     dataArray.value = processed
     console.log('Processed data:', processed)
-  }, 2000)
+  }, 500)
   
 })
 
