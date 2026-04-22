@@ -11,4 +11,4 @@ I also used Claude in-browser to understand more about how to implement paginati
 
 Claude did help me with this piece of the code, but I learned the pipeline: raw data -> filtered by search -> sorted -> sliced.
 
-I also used Copilot in my GitHub Codespace, but mostly to generate patches for my sorting code and help me write helper functions to filter out rows with no neighborhood listed and clean the SRType column.
+I also used Copilot in my GitHub Codespace, but mostly to generate patches for my sorting and pagination code and help me write helper functions to filter out rows with no neighborhood listed and clean the SRType column.
