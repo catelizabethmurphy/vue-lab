@@ -2,7 +2,7 @@
 
 I used two forms of AI: first, I used Claude in-browser to help me better understand Vue's structure by asking for more info on:
 - how single-file components work
-- what how <script setup>, <template> and <style scoped> do
+- what <script setup>, <template> and <style scoped> do
 - what ref and reactivity do
 - how to use v-if and v-for to control rendering
 - how props work
