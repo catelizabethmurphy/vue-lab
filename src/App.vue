@@ -41,7 +41,9 @@ let sortedData = computed(() => {
   return dataArray.value
     .filter(d => 
       d.Neighborhood.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-      d.Agency.toLowerCase().includes(searchQuery.value.toLowerCase())
+      d.Agency.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+      d.SRType.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+      d.CreatedDate.toLocaleString().toLowerCase().includes(searchQuery.value.toLowerCase())
     )
     .sort((a, b) => {
       const aValue = a[sortField.value]
@@ -98,7 +100,7 @@ function previousPage() {
       <!-- search input — all we're saying is "hey, when this changes, update the searchQuery and run the onSearch function" -->
       <input
       type="text"
-      placeholder="Search by neighborhood or agency..."
+      placeholder="Search by neighborhood, agency, date or call type..."
       :value="searchQuery"
       @input="searchQuery = $event.target.value; onSearch()"
       />
